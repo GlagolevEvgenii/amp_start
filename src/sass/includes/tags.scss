@@ -1,0 +1,29 @@
+@import "../global/variable";
+@import "../global/mixins";
+.article__labels {
+  .label {
+    margin: 8px 0 0;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: $white;
+    font-size: 12px;
+    line-height: 12px;
+    height: 20px;
+    padding: 4px 6px 0;
+    text-transform: uppercase;
+    display: inline-flex;
+    @include fb;
+    &.topic__mode {
+      background: linear-gradient(312.36deg, #85D700 0%, #0ECC0A 60.52%);
+    }
+    &.exclusive__mode {
+      background: linear-gradient(312.36deg, rgba(255, 119, 61, 0.29) 0%, #FF773D 60.52%), #EF0606;
+    }
+    &.pr__mode {
+      background: linear-gradient(312.36deg, #50C0FF 0%, #28B1EB 60.52%);
+    }
+    &.actual__mode {
+      background: linear-gradient(312.36deg, #EF0606 0%, #FF3D3D 60.52%);
+    }
+  }
+}

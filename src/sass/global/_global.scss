@@ -1,0 +1,47 @@
+@import "mixins";
+@import "variable";
+
+body{
+  color: $black;
+  font-size: 16px;
+  line-height: 22px;
+  @include fr;
+}
+.main{
+  max-width: 600px;
+  margin:0 auto;
+}
+.container{
+  padding: 0 20px;
+}
+h1,.h1{
+  font-size: 24px;
+  line-height: 120%;
+  @include fb;
+  color: $black;
+}
+h2,.h2{
+  font-size: 18px;
+  line-height: 22px;
+  @include fb;
+  color: $black;
+}
+.article__subtitle{
+  font-size: 18px;
+  line-height: 22px;
+  @include fm;
+  margin: 16px 0;
+}
+.article__content{
+
+}
+
+.mb_s{
+  margin-bottom: 24px;
+}
+.mb_m{
+  margin-bottom: 48px;
+}
+.mb_l{
+
+}

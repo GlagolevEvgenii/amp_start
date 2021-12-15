@@ -1,0 +1,64 @@
+/*FONTS*/
+/*images*/
+/*=======================START-MEDIA=====================*/
+/*=======================END-MEDIA=====================*/
+.header {
+  background: -webkit-gradient(linear, right top, left top, color-stop(12.21%, #0F27FF), color-stop(80.86%, rgba(15, 111, 255, 0))), #0F7CFC;
+  background: -o-linear-gradient(right, #0F27FF 12.21%, rgba(15, 111, 255, 0) 80.86%), #0F7CFC;
+  background: linear-gradient(270deg, #0F27FF 12.21%, rgba(15, 111, 255, 0) 80.86%), #0F7CFC;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.header__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  height: 44px;
+  margin-right: 56px;
+  position: relative; }
+
+.header__btn {
+  cursor: pointer;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 56px;
+          flex: 0 0 56px;
+  height: 44px;
+  position: relative;
+  width: 56px;
+  background: transparent; }
+  .header__btn:before, .header__btn:after {
+    background-color: #fff;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    margin-left: -8px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform-origin: 50% 50%;
+        -ms-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -webkit-transition: -webkit-transform .3s ease-out .2s;
+    transition: -webkit-transform .3s ease-out .2s;
+    -o-transition: transform .3s ease-out .2s;
+    transition: transform .3s ease-out .2s;
+    transition: transform .3s ease-out .2s, -webkit-transform .3s ease-out .2s;
+    width: 16px; }
+  .header__btn:before {
+    -webkit-transform: translate3d(0, -5px, 0);
+            transform: translate3d(0, -5px, 0); }
+  .header__btn:after {
+    -webkit-transform: translate3d(0, 3px, 0);
+            transform: translate3d(0, 3px, 0); }

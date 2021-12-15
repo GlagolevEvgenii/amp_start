@@ -1,0 +1,31 @@
+/*FONTS*/
+/*images*/
+/*=======================START-MEDIA=====================*/
+/*=======================END-MEDIA=====================*/
+.article__labels .label {
+  margin: 8px 0 0;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #fff;
+  font-size: 12px;
+  line-height: 12px;
+  height: 20px;
+  padding: 4px 6px 0;
+  text-transform: uppercase;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-family: 'CeraPro-Bold', sans-serif; }
+  .article__labels .label.topic__mode {
+    background: -o-linear-gradient(137.64deg, #85D700 0%, #0ECC0A 60.52%);
+    background: linear-gradient(312.36deg, #85D700 0%, #0ECC0A 60.52%); }
+  .article__labels .label.exclusive__mode {
+    background: -o-linear-gradient(137.64deg, rgba(255, 119, 61, 0.29) 0%, #FF773D 60.52%), #EF0606;
+    background: linear-gradient(312.36deg, rgba(255, 119, 61, 0.29) 0%, #FF773D 60.52%), #EF0606; }
+  .article__labels .label.pr__mode {
+    background: -o-linear-gradient(137.64deg, #50C0FF 0%, #28B1EB 60.52%);
+    background: linear-gradient(312.36deg, #50C0FF 0%, #28B1EB 60.52%); }
+  .article__labels .label.actual__mode {
+    background: -o-linear-gradient(137.64deg, #EF0606 0%, #FF3D3D 60.52%);
+    background: linear-gradient(312.36deg, #EF0606 0%, #FF3D3D 60.52%); }

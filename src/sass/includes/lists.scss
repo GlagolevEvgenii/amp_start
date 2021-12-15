@@ -1,0 +1,39 @@
+@import "../global/variable";
+@import "../global/mixins";
+.list{
+  list-style-type: none;
+  &.number__mode{
+    counter-reset: section;
+    list-style-type: none;
+    .list__item{
+      &:before{
+       background: transparent;
+        counter-increment: section;
+        content: counter(section)'.';
+        color: $blue;
+        @include fr;
+        height: auto;
+        top:1px;
+      }
+    }
+  }
+  &__item{
+    color: $black;
+    @include fr;
+    font-size: 16px;
+    line-height: 22px;
+    padding-left: 30px;
+    position: relative;
+    &:before{
+      content: "";
+      width: 6px;
+      height: 6px;
+      background: $blue;
+      position: absolute;
+      border-radius: 50%;
+      left: 0;
+      top:8px;
+    }
+  }
+
+}

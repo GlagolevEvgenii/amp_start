@@ -1,0 +1,95 @@
+/*FONTS*/
+/*images*/
+/*=======================START-MEDIA=====================*/
+/*=======================END-MEDIA=====================*/
+.article p {
+  margin: 16px 0 0;
+  padding: 0; }
+
+.article h2 {
+  margin: 24px 0 0; }
+
+.article a {
+  color: #0F7CFC; }
+
+.article strong, .article b {
+  font-family: 'CeraPro-Bold', sans-serif; }
+
+.article ul, .article ol {
+  list-style: none; }
+  .article ul li, .article ol li {
+    display: block;
+    margin: 4px 0 0;
+    padding: 0 0 0 24px;
+    position: relative;
+    color: #0E0E0E;
+    font-family: 'CeraPro-Regular', sans-serif; }
+
+.article ul li:before {
+  background-color: #0F7CFC;
+  border-radius: 50%;
+  content: "";
+  display: block;
+  height: 6px;
+  left: 0;
+  position: absolute;
+  top: 8px;
+  width: 6px; }
+
+.article ol {
+  counter-reset: numlist; }
+  .article ol li:before {
+    color: #0F7CFC;
+    content: counter(numlist) ".";
+    counter-increment: numlist;
+    display: block;
+    left: 0;
+    position: absolute;
+    top: 1px; }
+
+.article__fullwidth {
+  margin-left: -20px;
+  margin-right: -20px; }
+
+.article__altimg {
+  margin-top: 8px; }
+  .article__altimg strong {
+    font-size: 14px;
+    line-height: 18px; }
+  .article__altimg span {
+    font-family: 'CeraPro-Medium', sans-serif;
+    font-size: 12px;
+    line-height: 14px;
+    color: #828282; }
+
+.article .amp-carousel-button {
+  background-color: #fff;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  outline: none;
+  border: none; }
+  .article .amp-carousel-button:after {
+    content: "";
+    display: block;
+    height: 6px;
+    position: absolute;
+    top: 12px;
+    width: 6px; }
+  .article .amp-carousel-button.amp-carousel-button-prev:after {
+    border-left: 2px solid;
+    border-top: 2px solid;
+    left: 13px;
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg); }
+  .article .amp-carousel-button.amp-carousel-button-next:after {
+    border-right: 2px solid;
+    border-top: 2px solid;
+    left: 11px;
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg); }
+
+.article amp-instagram {
+  border: 1px solid #E3E4E4; }

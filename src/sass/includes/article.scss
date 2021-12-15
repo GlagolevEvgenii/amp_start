@@ -1,0 +1,115 @@
+@import "../global/variable";
+@import "../global/mixins";
+.article {
+  p {
+    margin: 16px 0 0;
+    padding: 0;
+  }
+  h2{
+    margin: 24px 0 0;
+  }
+
+  a {
+    color: $blue;
+  }
+
+  strong, b {
+    @include fb;
+  }
+
+  ul, ol {
+    list-style: none;
+
+    li {
+      display: block;
+      margin: 4px 0 0;
+      padding: 0 0 0 24px;
+      position: relative;
+      color: $black;
+      @include fr;
+    }
+  }
+
+  ul {
+    li:before {
+      background-color: $blue;
+      border-radius: 50%;
+      content: "";
+      display: block;
+      height: 6px;
+      left: 0;
+      position: absolute;
+      top: 8px;
+      width: 6px;
+    }
+  }
+
+  ol {
+    counter-reset: numlist;
+    li:before {
+      color: $blue;
+      content: counter(numlist) ".";
+      counter-increment: numlist;
+      display: block;
+      left: 0;
+      position: absolute;
+      top: 1px;
+    }
+  }
+  &__fullwidth{
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+  &__altimg{
+    margin-top: 8px;
+    strong{
+      font-size: 14px;
+      line-height: 18px;
+    }
+    span{
+      @include fm;
+      font-size: 12px;
+      line-height: 14px;
+      color: #828282;
+    }
+  }
+  .amp-carousel-button{
+    background-color: $white;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    &:after{
+      content: "";
+      display: block;
+      height: 6px;
+      position: absolute;
+      top: 12px;
+      width: 6px;
+    }
+    &.amp-carousel-button-prev{
+      &:after{
+        border-left: 2px solid;
+        border-top: 2px solid;
+        left: 13px;
+        transform: rotate(-45deg);
+      }
+    }
+    &.amp-carousel-button-next{
+      &:after{
+        border-right: 2px solid;
+        border-top: 2px solid;
+        left: 11px;
+        transform: rotate(45deg);
+      }
+    }
+  }
+  amp-instagram{
+    border: 1px solid #E3E4E4;
+  }
+}
+
+.article__content {
+
+}

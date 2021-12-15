@@ -1,0 +1,46 @@
+@import "../global/variable";
+@import "../global/mixins";
+.header {
+  background: $b-gradient;
+  display: flex;
+}
+.header__logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  flex: 1 1 auto;
+  height: 44px;
+  margin-right: 56px;
+  position: relative;
+}
+.header__btn {
+  cursor: pointer;
+  flex: 0 0 56px;
+  height: 44px;
+  position: relative;
+  width: 56px;
+  background: transparent;
+
+  &:before, &:after {
+    background-color: #fff;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    margin-left: -8px;
+    position: absolute;
+    top: 50%;
+    transform-origin: 50% 50%;
+    transition: transform .3s ease-out .2s;
+    width: 16px;
+  }
+
+  &:before {
+    transform: translate3d(0, -5px, 0);
+  }
+
+  &:after {
+    transform: translate3d(0, 3px, 0);
+  }
+}

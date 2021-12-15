@@ -1,0 +1,16 @@
+@import "./global/global";
+@import "./global/mixins";
+@import "./global/variable";
+@import "./global/reset";
+@import "./global/fonts";
+@import "./includes/header";
+@import "./includes/article";
+@import "./includes/Sidebar";
+@import "./includes/breadcrumbs";
+@import "./includes/tags";
+body{
+  background: #fff;
+}
+h1{
+  @include fr
+}

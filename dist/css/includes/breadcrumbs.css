@@ -1,0 +1,20 @@
+/*FONTS*/
+/*images*/
+/*=======================START-MEDIA=====================*/
+/*=======================END-MEDIA=====================*/
+.breadcrumbs {
+  margin: 24px 0 8px; }
+  .breadcrumbs__item {
+    font-family: 'CeraPro-Medium', sans-serif;
+    padding-right: 8px;
+    -webkit-transition: .3s ease-out;
+    -o-transition: .3s ease-out;
+    transition: .3s ease-out;
+    white-space: nowrap;
+    color: #0F7CFC;
+    font-size: 12px;
+    line-height: 14px; }
+    .breadcrumbs__item::after {
+      color: #0F7CFC;
+      content: "/";
+      padding-left: 8px; }

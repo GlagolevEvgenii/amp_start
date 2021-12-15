@@ -1,0 +1,19 @@
+@import "../global/variable";
+@import "../global/mixins";
+.breadcrumbs{
+  margin: 24px 0 8px;
+  &__item{
+    @include fm;
+    padding-right: 8px;
+    transition: .3s ease-out;
+    white-space: nowrap;
+    color: $blue;
+    font-size: 12px;
+    line-height: 14px;
+    &::after{
+      color: $blue;
+      content: "/";
+      padding-left: 8px;
+    }
+  }
+}
